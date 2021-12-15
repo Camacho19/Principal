@@ -8,7 +8,7 @@ class Hash {
         return ((n + 1) % m);
     }
 
-    static void insertaHash(Hash[] h, int m, int n) {
+    static void insertaHash(Hash[] h, int m, int n) {//metodo para insertar un elemento
         boolean i = false;
         int j = funcion(n, m);
         do {
@@ -26,7 +26,7 @@ class Hash {
             javax.swing.JOptionPane.showMessageDialog(null, "¡Tabla llena!");
         }
     }
-    static int buscaHash(Hash[] h, int m, int n) {
+    static int buscaHash(Hash[] h, int m, int n) {//metodo para buscar elementos
         int j = funcion(n, m);
         while (j < m) {
             if (h[j].estado == 0) {
@@ -43,7 +43,7 @@ class Hash {
         }
         return -1;
     }
-    static int eliminaHash(Hash[] h, int m, int n) {
+    static int eliminaHash(Hash[] h, int m, int n) {//metodo para eliminar elementos
         int i = buscaHash(h, m, n);
         if (i == -1) {
             return -1;
