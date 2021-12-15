@@ -8,7 +8,7 @@ class Hash {
         return ((n + 1) % m);
     }
 
-    static void insertaHash(Hash[] h, int m, int n) {//metodo para insertar un elemento
+    static void insertaHash(Hash[] h, int m, int n) {//metodo para insertar elementos
         boolean i = false;
         int j = funcion(n, m);
         do {
